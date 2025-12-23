@@ -119,9 +119,10 @@ export class Dish {
         } else {
             ctx.translate(this.position.x, this.position.y);
             ctx.rotate(this.rotation);
-            ctx.font = `${this.size}px serif`;
+            ctx.font = `${this.size}px "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", sans-serif`;
             ctx.textAlign = 'center';
             ctx.textBaseline = 'middle';
+            ctx.fillStyle = '#ffffff'; // Ensure visibility if monochrome
             ctx.fillText(this.emoji, 0, 0);
         }
 
@@ -144,9 +145,10 @@ export class Dish {
         }
         ctx.clip();
 
-        ctx.font = `${this.size}px serif`;
+        ctx.font = `${this.size}px "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", sans-serif`;
         ctx.textAlign = 'center';
         ctx.textBaseline = 'middle';
+        ctx.fillStyle = '#ffffff'; // Ensure visibility if monochrome
         ctx.fillText(this.emoji, 0, 0);
 
         ctx.restore();
