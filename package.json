@@ -10,8 +10,12 @@
     "deploy": "npm run build && wrangler deploy"
   },
   "devDependencies": {
+    "@cloudflare/workers-types": "^4.20251223.0",
     "typescript": "^5.3.3",
     "vite": "^5.4.11",
     "wrangler": "^3.99.0"
+  },
+  "dependencies": {
+    "@cloudflare/kv-asset-handler": "^0.4.1"
   }
 }
