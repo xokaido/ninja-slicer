@@ -1,0 +1,19 @@
+{
+    "title": "Ninja Slicer",
+    "subtitle": "Slice the dishes!",
+    "play": "Play",
+    "highScore": "Best",
+    "settings": "Settings",
+    "gameOver": "Game Over",
+    "score": "Score",
+    "newRecord": "New Record!",
+    "combo": "Combo",
+    "tryAgain": "Try Again",
+    "menu": "Menu",
+    "music": "Music",
+    "sounds": "Sound Effects",
+    "close": "Close",
+    "swipeToSlice": "Swipe to slice the dishes!",
+    "paused": "Paused",
+    "resume": "Resume"
+}
