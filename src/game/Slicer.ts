@@ -11,7 +11,6 @@ export class Slicer {
     private readonly trailMaxAge = 0.15; // seconds
     private readonly minSliceSpeed = 300; // pixels per second
     private isActive = false;
-    private lastPosition: Vector2 | null = null;
 
     get currentSpeed(): number {
         if (this.trail.length < 2) return 0;
@@ -62,13 +61,11 @@ export class Slicer {
         this.isActive = true;
         this.trail = [];
         this.addPoint(x, y);
-        this.lastPosition = { x, y };
     }
 
     moveSlice(x: number, y: number): void {
         if (!this.isActive) return;
         this.addPoint(x, y);
-        this.lastPosition = { x, y };
     }
 
     endSlice(): void {

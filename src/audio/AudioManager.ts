@@ -179,7 +179,6 @@ class AudioManager {
 
         for (let i = 0; i < buffer.length; i++) {
             const t = i / sampleRate;
-            const beatPos = (t % 2) / 2; // Position within 2-second beat
 
             let sample = 0;
 
